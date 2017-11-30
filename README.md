@@ -100,7 +100,7 @@ My template is very similar to Pandoc's default template. It only adds two thing
 
 ### 5. Page size and fonts
 
-You can use [SASS](http://sass-lang.com) to change PDF page size and fonts. Simply modify PrintZongpai.scss and /base/_page.scss.
+You can use [SASS](http://sass-lang.com) to change PDF page size and fonts. Simply modify `/scss/PrintZongpai.scss` and `scss/base/_page.scss`.
 
 ### 6. Generate
 
