@@ -1,0 +1,175 @@
+/* 黑體 */
+@font-face {
+  font-family: "Hei";
+  src: local("Source Han Sans TC Regular"), local("Heiti TC Light"), local("Microsoft Yahei"), local("Microsoft Jhenghei");
+}
+@font-face {
+  /* 日文假名 + 〇 */
+  unicode-range: U+3040-309F, U+30A0-30FF, U+3099-309E, U+FF66-FF9F, U+3007;
+  font-family: "Hei";
+  src: local("YuGothic Medium"), local("Source Han Sans TC Regular");
+}
+@font-face {
+  font-family: "Hei";
+  font-weight: 600;
+  src: local("Source Han Sans TC Bold"), local("Heiti TC Medium"), local("Microsoft YaHei Bold"), local("Microsoft Jhenghei Bold");
+}
+@font-face {
+  /* 日文假名 + 〇 */
+  unicode-range: U+3040-309F, U+30A0-30FF, U+3099-309E, U+FF66-FF9F, U+3007;
+  font-family: "Hei";
+  font-weight: 600;
+  src: local("YuGothic Bold"), local("Source Han Sans TC Bold"), local("Heiti TC Medium"), local("Microsoft YaHei Bold"), local("Microsoft Jhenghei Bold");
+}
+
+/* 明體 */
+@font-face {
+  font-family: "Ming";
+  src: local("Source Han Serif TC Medium"), local("Songti TC Regular"), local(PMingLiU);
+}
+@font-face {
+  /* 日文假名 + 〇 */
+  unicode-range: U+3040-309F, U+30A0-30FF, U+3099-309E, U+FF66-FF9F, U+3007;
+  font-family: "Ming";
+  src: local("YuMincho Medium"), local("Source Han Serif TC"), local("Songti TC Regular");
+}
+@font-face {
+  font-family: "Ming";
+  font-weight: 600;
+  src: local("Source Han Serif TC Bold"), local("Songti TC Bold"), local("YuMincho Demibold");
+}
+@font-face {
+  /* 日文假名 + 〇 */
+  unicode-range: U+3040-309F, U+30A0-30FF, U+3099-309E, U+FF66-FF9F, U+3007;
+  font-family: "Ming";
+  font-weight: 600;
+  src: local("YuMincho Demibold"), local("Source Han Serif TC Bold"), local("Songti TC Bold");
+}
+
+/* 楷體 */
+@font-face {
+  font-family: cursive;
+  src: local(BiauKai), local("Kaiti TC");
+}
+@font-face {
+  font-family: "Kai";
+  src: local(BiauKai), local("Kaiti TC");
+}
+@font-face {
+  /* 日文假名 + 〇 */
+  unicode-range: U+3040-309F, U+30A0-30FF, U+3099-309E, U+FF66-FF9F, U+3007;
+  font-family: "Kai";
+  src: local("YuKyokasho Bold"), local(BiauKai), local("標楷體"), local("Kaiti TC");
+}
+@font-face {
+  font-family: cursive;
+  font-weight: 600;
+  src: local("Kaiti TC Bold");
+}
+@font-face {
+  font-family: "Kai";
+  font-weight: 600;
+  src: local("Kaiti TC Bold");
+}
+
+/* 仿宋 */
+@font-face {
+  font-family: "Fang";
+  src: local("Adobe Fangsong Std"), local(STFangsong), local(FangSong);
+}
+
+/* 標點符號 */
+/* 教育部破折號 */
+@font-face {
+  font-family: "Punctuation Sans";
+  src: local("Source Han Sans TW"), local("Heiti TC");
+  unicode-range: U+2500;
+}
+@font-face {
+  font-family: "Punctuation Serif";
+  src: local("Source Han Serif TW"), local("Songti TC");
+  unicode-range: U+2500;
+}
+/* 全形． */
+@font-face {
+  font-family: "Punctuation Sans";
+  src: local("Source Han Sans TC"), local("Heiti TC");
+  unicode-range: U+FF0E;
+}
+@font-face {
+  font-family: "Punctuation Serif";
+  src: local("Source Han Serif TC"), local("Songti TC");
+  unicode-range: U+FF0E;
+}
+/* 真破折號 */
+@font-face {
+  font-family: "Punctuation Sans";
+  src: url("./font/han.woff?v3.3.0") format("woff"), url("./font/han.otf?v3.3.0") format("opentype"), local("Source Han Sans TW"), local("Heiti TC");
+  unicode-range: U+2014;
+}
+@font-face {
+  font-family: "Punctuation Serif";
+  src: url("./font/han.woff?v3.3.0") format("woff"), url("./font/han.otf?v3.3.0") format("opentype"), local("Source Han Serif TW"), local("Songti TC"), local(STSong), local("Heiti SC"), local(SimSun);
+  unicode-range: U+2014;
+}
+/* 橫向刪節號 */
+@font-face {
+  font-family: "Punctuation Sans";
+  src: url("./font/han.woff?v3.3.0") format("woff"), url("./font/han.otf?v3.3.0") format("opentype"), local("Source Han Sans TW"), local("Heiti TC");
+  unicode-range: U+2026;
+}
+@font-face {
+  font-family: "Punctuation Serif";
+  src: url("./font/han.woff?v3.3.0") format("woff"), url("./font/han.otf?v3.3.0") format("opentype"), local("Source Han Serif TW"), local("Songti SC"), local(STSong), local("Heiti SC"), local(SimSun);
+  unicode-range: U+2026;
+}
+@font-face {
+  font-family: "Punctuation Sans";
+  font-weight: bold;
+  src: url("./font/han.woff?v3.3.0") format("woff"), url("./font/han.otf?v3.3.0") format("opentype");
+  unicode-range: U+2014, U+2026, U+00B7;
+}
+/* 全形句號、逗號、頓號 */
+@font-face {
+  font-family: "Punctuation Sans";
+  src: local("Source Han Sans TC"), local("Heiti TC");
+  unicode-range: U+3002, U+FF0C, U+3001;
+}
+@font-face {
+  font-family: "Punctuation Serif";
+  src: local("Source Han Serif TC"), local("Songti SC"), local(STSong), local("Heiti SC"), local(SimSun);
+  unicode-range: U+3002, U+FF0C, U+3001;
+}
+/* 全形分號、問號、驚嘆號、連接號、減號、左右斜槓 */
+@font-face {
+  font-family: "Punctuation Sans";
+  src: local("Source Han Sans TC"), local("Heiti TC");
+  unicode-range: U+FF1B, U+FF1F, U+FF01, U+FF0D, U+FF0F, U+FF3C;
+}
+@font-face {
+  font-family: "Punctuation Serif";
+  src: local("Source Han Serif TC"), local("Songti TC"), local(PMingLiU);
+  unicode-range: U+FF1B, U+FF1F, U+FF01, U+FF0D, U+FF0F, U+FF3C;
+}
+/* 冒號 */
+@font-face {
+  font-family: "Punctuation Sans";
+  src: local("Source Han Sans TC");
+  unicode-range: U+FF1A;
+}
+@font-face {
+  font-family: "Punctuation Serif";
+  src: local("Source Han Serif TC"), local(PMingLiU);
+  unicode-range: U+FF1A;
+}
+/* 直角引號、書名號、章名號、括號、方括號 */
+@font-face {
+  font-family: "Punctuation Sans";
+  src: local("Hiragino Kaku Gothic ProN"), local("Source Han Sans TC"), local("Heiti TC");
+  unicode-range: U+300C-300F, U+300A-300B, U+3008-3009, U+FF08-FF09, U+3014-3015;
+}
+@font-face {
+  font-family: "Punctuation Serif";
+  src: local("Hiragino Mincho ProN"), local("Source Han Serif TC"), local("Songti TC"), local(SimSun);
+  unicode-range: U+300C-300F, U+300A-300B, U+3008-3009, U+FF08-FF09, U+3014-3015;
+}

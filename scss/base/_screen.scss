@@ -1,0 +1,33 @@
+@media screen {
+  html { 
+    font-size: 18px;
+  }
+
+  body {
+  	margin-right: 1em;
+  	margin-top: auto;
+  	margin-bottom: auto;
+  	max-height: 36em;
+  	min-height: 340px;
+  	padding-top: 1em;
+  	padding-bottom: 1em;
+  }
+
+  /* Table of contents */
+  #TOC {
+    background-color: #ddd;
+  }
+
+  /* Chapter title */
+  article > h2 {
+    margin-right: 5em;
+  }
+  
+  figure {
+    float: left;
+    margin: 0 1em 1em 1em;
+    border: solid 1px #bbb;
+    width: 40%;
+    min-width: 440px;
+  }
+}

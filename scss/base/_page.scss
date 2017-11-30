@@ -1,0 +1,56 @@
+@page {
+  size: A5;
+  margin-top: 30mm;
+  margin-bottom: 40mm;
+  marks: crop cross;
+  bleed: 3mm;
+  @footnote {
+    float: bottom;
+  }
+}
+
+// header h1 { string-set: booktitle content(); } // Vivliostyle hasn't supported this yet
+
+@page :first {
+  position: relative;
+  @bottom-left-corner {
+    content: none;
+  }
+}
+
+@page :left {
+  margin-left: 25mm;
+  margin-right: 25mm;
+  @bottom-left-corner {
+    content: counter(page);
+    margin-bottom: -10mm;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+
+@page :right {
+  margin-right: 25mm;
+  margin-left: 25mm;
+  @bottom-right-corner {
+    content: counter(page);
+    margin-bottom: -10mm;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  @bottom-right {
+    // content: string(booktitle); // Vivliostyle hasn't supported this yet
+    margin-bottom: -10mm;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    font-size: 0.8em;
+    text-align: right;
+  }
+}
