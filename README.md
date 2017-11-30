@@ -80,8 +80,8 @@ author: "My Name"
 date: "2017-01-01"
 lang: zh-Hant
 cover-image: /image/cover.jpg
-stylesheet: "/css/EPUBZongpai.css"  # Stylesheet for EPUB
-css: "/css/PrintZongpai.css"  # CSS for HTML and print
+stylesheet: "./css/EPUBZongpai.css"  # Stylesheet for EPUB
+css: "./css/PrintZongpai.css"  # CSS for HTML and print
 page-progression-direction: rtl
 toc-title: "目次"
 post: article  # HTML tag that wraps around main contents 
