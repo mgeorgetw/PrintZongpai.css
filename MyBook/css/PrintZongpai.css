@@ -1,0 +1,721 @@
+@charset "UTF-8";
+/* 縱排印刷.CSS v0.0.1 Draft | MIT License */
+/* PrintZongpai.css: the CSS created for vertical writing and printing */
+/* Basic fonts */
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+html {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: sans-serif;
+  height: 100%; }
+
+body {
+  max-height: 100%;
+  line-height: 1.8; }
+
+/* Book title */
+header {
+  text-align: center; }
+
+header .title {
+  font-family: "Palatino Linotype", "Source Han Serif TW", "Songti TC", YuMincho, PMingLiu, serif;
+  display: inline-block;
+  letter-spacing: 0.5em;
+  font-weight: 700; }
+
+header .author {
+  font-family: "Palatino Linotype", "Source Han Serif TW", "Songti TC", YuMincho, PMingLiu, serif;
+  font-size: 1.6em;
+  display: inline-block;
+  font-weight: 700; }
+
+header .date {
+  display: none; }
+
+/* Table of contents */
+#TOC {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Source Han Sans TC", sans-serif; }
+
+#TOC h2 {
+  padding-top: 1.8em;
+  text-indent: 4rem;
+  display: block;
+  font-family: "Palatino Linotype", "Source Han Serif TW", "Songti TC", YuMincho, PMingLiu, serif;
+  font-weight: 600;
+  font-size: 1.3em; }
+
+#TOC ul {
+  line-height: 4; }
+
+#TOC li {
+  list-style-type: none;
+  font-weight: 400; }
+
+#TOC a {
+  text-decoration: none;
+  color: inherit; }
+
+/* Basic styles */
+article {
+  line-break: strict;
+  word-break: strict;
+  text-align: justify;
+  text-align-last: left;
+  font-family: "Palatino Linotype", "Source Han Serif TW", "Songti TC", YuMincho, PMingLiu, serif;
+  line-height: 1.8;
+  font-weight: 500;
+  font-feature-settings: 'pkna';
+  text-spacing: ideograph-alpha ideograph-numeric; }
+
+article > h2 {
+  font-family: "Palatino Linotype", "Source Han Serif TW", "Songti TC", YuMincho, PMingLiu, serif;
+  margin-left: 3em;
+  text-align: center;
+  counter-reset: footnote;
+  font-weight: 600; }
+
+a {
+  text-decoration: none;
+  color: #5F7894;
+  transition: color 0.3s ease; }
+
+a:hover {
+  text-decoration: underline; }
+
+blockquote {
+  font-family: "Adobe Garamond Pro", "Biaukai", cursive;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 0 1em 0 1em; }
+
+hr {
+  border: none;
+  color: #333;
+  line-height: 4; }
+
+hr:after {
+  content: "§";
+  font-size: 1.3em; }
+
+figure {
+  -webkit-writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+  writing-mode: horizontal-tb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Source Han Sans TC", sans-serif;
+  font-weight: 400; }
+
+figcaption {
+  padding: 0.5em;
+  font-size: 0.9em; }
+
+figure img {
+  max-width: 100% !important;
+  max-height: 100% !important; }
+
+em {
+  font-style: normal;
+  -webkit-text-emphasis-style: dot; }
+
+/* 縱中橫 */
+span.zzh {
+  text-combine-upright: all; }
+
+/* Reference footnotes generated by Pandoc */
+.footnoteRef sup,
+.footnote-ref sup {
+  line-height: 1;
+  top: 10%;
+  vertical-align: text-top;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Source Han Sans TC", sans-serif;
+  -webkit-writing-mode: horizontal-tb;
+  -epub-writing-mode: horizontal-tb; }
+
+.footnotes:before {
+  content: '';
+  display: block;
+  position: relative;
+  margin-right: 4em;
+  margin-left: 1em;
+  width: 1px;
+  height: 40%;
+  background: black; }
+
+.footnotes hr {
+  display: none; }
+
+.footnotes ol {
+  font-family: "Adobe Garamond Pro", "Adobe Fangsong Std", serif;
+  list-style-type: none;
+  counter-reset: fn;
+  padding-top: 1em; }
+
+.footnotes li:before {
+  -webkit-writing-mode: horizontal-tb;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Source Han Sans TC", sans-serif;
+  position: relative;
+  font-weight: 200;
+  font-size: 0.8em;
+  float: left;
+  margin-top: -1.8em;
+  right: 8px;
+  content: counter(fn); }
+
+.footnotes li {
+  position: relative;
+  counter-increment: fn; }
+
+@page {
+  size: A5;
+  margin-top: 30mm;
+  margin-bottom: 40mm;
+  marks: crop cross;
+  bleed: 3mm;
+  @footnote {
+    float: bottom; } }
+@page :first {
+  position: relative;
+  @bottom-left-corner {
+    content: none; } }
+@page :left {
+  margin-left: 25mm;
+  margin-right: 25mm;
+  @bottom-left-corner {
+    content: counter(page);
+    margin-bottom: -10mm;
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
+    writing-mode: horizontal-tb;
+    text-align: center;
+    font-size: 0.8em; } }
+@page :right {
+  margin-right: 25mm;
+  margin-left: 25mm;
+  @bottom-right-corner {
+    content: counter(page);
+    margin-bottom: -10mm;
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
+    writing-mode: horizontal-tb;
+    font-size: 0.8em;
+    text-align: center; }
+  @bottom-right {
+    margin-bottom: -10mm;
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
+    writing-mode: horizontal-tb;
+    font-size: 0.8em;
+    text-align: right; } }
+@media print {
+  /* Book title */
+  header {
+    width: 30em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-writing-mode: horizontal-tb; }
+
+  header .title {
+    page-break-after: avoid;
+    letter-spacing: 0; }
+
+  header .title:after {
+    content: '';
+    display: block;
+    position: relative;
+    margin-top: 10pt;
+    height: 1pt;
+    width: 100%;
+    background: #555; }
+
+  header .author {
+    page-break-before: avoid;
+    text-indent: 0;
+    display: block; }
+
+  /* Table of contents */
+  #TOC {
+    page-break-before: always;
+    page-break-after: always; }
+
+  #TOC a::after {
+    content: target-counter(attr(href), page);
+    -webkit-writing-mode: horizontal-tb;
+    color: #888;
+    padding-top: 1em;
+    font-weight: 200;
+    font-size: 0.8em;
+    align-self: flex-end;
+    flex: none;
+    order: 2; }
+
+  /* Chapter title */
+  article > h2 {
+    page-break-before: left;
+    text-indent: 2rem; }
+
+  h2, h3 {
+    -webkit-column-break-after: avoid;
+    page-break-after: avoid; }
+
+  /* Paragraph styles */
+  p {
+    orphans: 1;
+    widows: 1;
+    margin: 0;
+    text-indent: 2em; }
+
+  a {
+    text-decoration: none;
+    color: inherit; }
+
+  figure {
+    margin: 2em -1em;
+    page-break-inside: avoid; }
+
+  figure img {
+    image-resolution: 300dpi; }
+
+  /* Temporary inline footnote, footnote refs doesn't work with Vivliostyle */
+  span.footnote {
+    font-family: "Adobe Garamond Pro", "Adobe Fangsong Std", serif;
+    float: footnote;
+    counter-increment: footnote;
+    margin-top: 1.2em;
+    text-indent: -1.6em;
+    footnote-policy: line; }
+
+  span.footnote::footnote-marker,
+  span.footnote::footnote-call {
+    content: "[" counter(footnote) "]";
+    font-size: 0.8em;
+    text-indent: 0;
+    vertical-align: 10%;
+    font-family: "Helvetica Neue";
+    -webkit-writing-mode: horizontal-tb;
+    -epub-writing-mode: horizontal-tb; }
+
+  span.footnote::footnote-call {
+    margin-top: -0.3em;
+    font-size: 0.6em; }
+
+  /* Reference footnotes generated by Pandoc */
+  .footnoteRef sup,
+  .footnote-ref sup {
+    text-indent: 0; }
+
+  .footnotes p {
+    text-indent: 0;
+    page-break-inside: avoid; }
+
+  .footnotes li:before {
+    page-break-after: avoid; }
+
+  .footnotes a:last-child {
+    display: none; }
+
+  #bttBtn {
+    display: none; } }
+@media screen {
+  html {
+    font-size: 18px; }
+
+  body {
+    margin-right: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-height: 36em;
+    min-height: 340px;
+    padding-top: 1em;
+    padding-bottom: 1em; }
+
+  /* Table of contents */
+  #TOC {
+    background-color: #ddd; }
+
+  /* Chapter title */
+  article > h2 {
+    margin-right: 5em; }
+
+  figure {
+    float: left;
+    margin: 0 1em 1em 1em;
+    border: solid 1px #bbb;
+    width: 40%;
+    min-width: 440px; } }
+
+/*# sourceMappingURL=PrintZongpai.css.map */

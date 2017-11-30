@@ -7,9 +7,9 @@ publisher: 樵志林產
 rights: © 二〇一八　黃樵志　版權所有
 page-progression-direction: rtl
 # Stylesheet for EPUB
-stylesheet: "../css/EPUBZongpai.css"
+stylesheet: "./css/EPUBZongpai.css"
 # CSS for HTML and print
-css: "../css/PrintZongpai.css"
+css: "./css/PrintZongpai.css"
 toc-title: "目次"
 post: article
 ibooks:
