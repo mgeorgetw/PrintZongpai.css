@@ -79,7 +79,7 @@ title: "MyBook Title"
 author: "My Name"
 date: "2017-01-01"
 lang: zh-Hant
-cover-image: /image/cover.jpg
+cover-image: "./image/cover.jpg"
 stylesheet: "./css/EPUBZongpai.css"  # Stylesheet for EPUB
 css: "./css/PrintZongpai.css"  # CSS for HTML and print
 page-progression-direction: rtl
