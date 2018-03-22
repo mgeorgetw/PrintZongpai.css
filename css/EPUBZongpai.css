@@ -1,17 +1,141 @@
 @charset "UTF-8";
 
-/* 縱排EPUB.CSS v0.0.1 Draft | MIT License */
+/* 縱排EPUB.CSS v0.1 Draft | MIT License */
 /* EPUBZongpai.css: the CSS created for vertical writing and printing */
 
+/* Normalize everything */
 html {
-  -webkit-writing-mode: vertical-rl;
-  -epub-writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -epub-writing-mode: vertical-rl;
 }
 body { 
-  margin: 0;
-  text-align: justify;
-  text-justify: inter-ideograph;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.75em;
+    text-align: justify;
+    text-align-last:left;
+    -webkit-text-align-last: left;
+    -epub-text-align-last: left;
+    text-justify: inter-ideograph;
+    vertical-align: baseline;
+    background: transparent;
+    word-spacing: normal;
+    letter-spacing: normal;
+    text-indent: 0;
+    white-space: normal;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    line-break: normal;
+    -webkit-line-break: normal;
+    -epub-line-break: normal;
+    word-break: normal;
+    -webkit-word-break: normal;
+    -epub-word-break: normal;
+    -webkit-hyphens: auto;
+    -epub-hyphens: auto;
+    text-underline-position: under left;
+    -webkit-text-underline-position: under left;
+    -epub-text-underline-position: under left;
 }
+/* Normalize tables */
+table {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+tbody, thead, tfoot, tr, td, th {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+  border-style: inherit;
+  border-width: inherit;
+  border-color: inherit;
+  line-height: 1.75em;
+}
+section, header, footer, aside, menu, figure, figcaption, nav {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+p {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-indent: 0;
+}
+div {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-indent: 0;
+}
+span {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  vertical-align: baseline;
+  background: transparent;
+}
+img {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+  width: auto;
+  height: auto;
+  border: none;
+}
+hr {
+  border-width: 1px;
+  border-color: #000;
+  clear: both;
+}
+/* Normalize links */
+a {
+  text-decoration: none;
+  background: transparent;
+}
+a:link {
+  color: #00f;
+}
+a:visited {
+  color: #00f;
+}
+a:hover {
+  color: #00f;
+}
+a:focus {
+  color: #00f;
+}
+a:active {
+  color: #00f;
+}
+
+/* Starts styling */
 code { font-family: monospace; }
 h1 { text-align: center; }
 h2 { text-align: center; }
@@ -27,28 +151,28 @@ ol.toc { padding: 0; margin-top: 1em; }
 ol.toc li { list-style-type: none; margin: 0; padding: 0; }
 nav ol { list-style-type: none; }
 p {
-  text-indent: 2em;
-  margin: 0;
+    text-indent: 2em;
+    margin: 0;
 }
 blockquote {
-  font-family: cursive;
-  margin: 0 1em 0 1em;
+    font-family: cursive;
+    margin: 0 1em 0 1em;
 }
 figure {
-  -webkit-writing-mode: horizontal-tb;
-  -epub-writing-mode: horizontal-tb;
-  text-align: center;
-  width: 100%;
-  margin: auto;
+    -webkit-writing-mode: horizontal-tb;
+    -epub-writing-mode: horizontal-tb;
+    text-align: center;
+    width: 100%;
+    margin: auto;
 }
 figcaption {
-  padding:0.8em;
-  font-size: 0.9em;
+    padding:0.8em;
+    font-size: 0.9em;
 }
 figure img {
-  max-width: 100% !important;
-  max-height: 100% !important;
-  vertical-align: bottom;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    vertical-align: bottom;
 }
 hr {
     padding: 0;
@@ -64,69 +188,121 @@ hr:after {
     padding: 0 0.25em;
 }
 em {
-  font-style: normal;
-  -webkit-text-emphasis-style: dot; }
-/* 縱中橫 */
-span.zzh {
-  text-combine-upright: all; }
+    font-style: normal;
+    -webkit-text-emphasis-style: dot;
+}
 
+/* 文字強調 */
+.b {
+  font-weight: bold;
+}
+.i{
+  font-style: italic;
+}
+.s {
+  text-decoration: line-through;
+}
+.sup {
+  font-size: 60%;
+  vertical-align: super;
+}
+.sub {
+  font-size: 60%;
+  vertical-align: sub;
+}
+
+/* 縱中橫 */
+.zzh {
+  -webkit-text-combine: horizontal;
+  text-combine: horizontal;
+}
+
+/* 西文直立 */
+.text-upright {
+  text-orientation: upright;
+  -webkit-text-orientation: upright;
+  -epub-text-orientation: upright;
+}
+/* 漢字放倒 */
+.text-sideways {
+  text-orientation: sideways;
+  -webkit-text-orientation: sideways;
+  -epub-text-orientation: sideways;
+}
+
+/* 對齊 */
+.float-none {
+    float: none;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+/* 顛倒 */
+.upside-down {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
 
 .footnotes hr {
-  margin-right: 1.25em;
-  margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-left: 1.25em;
 }
 .footnotes ol {
-  margin-top: 2em;
+    margin-top: 2em;
 }
 .footnotes li {
-  font-size: 0.875em;
+    font-size: 0.875em;
 }
 .footnotes p {
-  text-indent: 0;
+    text-indent: 0;
 }
 a.footnoteRef,
 a.footnote-ref {
-  display: inline-block;
-  border: none;
-  font-size: 0.75em;
-  line-height: 1;
-  vertical-align: super;
-  -webkit-writing-mode: horizontal-tb;
-  -epub-writing-mode: horizontal-tb;
-  text-indent: 0;
+    display: inline-block;
+    border: none;
+    font-size: 0.75em;
+    line-height: 1;
+    vertical-align: super;
+    -webkit-writing-mode: horizontal-tb;
+    -epub-writing-mode: horizontal-tb;
+    text-indent: 0;
 }
 
 /*  Disable hyphenation for headings to avoid single-syllable-lines.
-*/
+ */
 h1,
 h2 {
-	  -epub-hyphens: none;
-  -webkit-hyphens: none;
-     -moz-hyphens: none;
-          hyphens: none;
+    -epub-hyphens: none;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
 }
 
 /* Set the minimum amount of lines to show up on a separate page. (There is not much support for this at the moment.)
-*/
+ */
 p,
 blockquote {
-  orphans: 2;
-  widows: 2;
+    orphans: 2;
+    widows: 2;
 }
 
 /*  Turn on hyphenation for paragraphs and captions only.
-*/
+ */
 p,
 figcaption {
-	  -epub-hyphens: auto;
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-          hyphens: auto;
+    -epub-hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 /*  Shortcodes for page-break rules.
-    Use data attributes to designate if and how the page should be broken before, inside or after an element.
-*/
+Use data attributes to designate if and how the page should be broken before, inside or after an element.
+ */
 h1, h2, h3, h4, h5, h6,
 table, img, figure, video,
 [data-page-break~=inside][data-page-break~=avoid] { page-break-inside:  avoid; }
