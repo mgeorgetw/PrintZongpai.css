@@ -16,13 +16,15 @@ html {
   -ms-text-size-adjust: 100%;
   /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -44,7 +46,8 @@ nav,
 section,
 summary {
   /* 1 */
-  display: block; }
+  display: block;
+}
 
 /**
  * Add the correct display in IE 9-.
@@ -53,20 +56,23 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block; }
+  display: inline-block;
+}
 
 /**
  * Add the correct display in iOS 4-7.
  */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /**
  * Add the correct display in IE 10-.
@@ -74,7 +80,8 @@ progress {
  */
 template,
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 /* Links
    ========================================================================== */
@@ -86,7 +93,8 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the outline on focused links when they are also active or hovered
@@ -94,7 +102,8 @@ a {
  */
 a:active,
 a:hover {
-  outline-width: 0; }
+  outline-width: 0;
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -108,27 +117,31 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   text-decoration: underline dotted;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 b,
 strong {
-  font-weight: inherit; }
+  font-weight: inherit;
+}
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
 /**
  * Add the correct font style in Android 4.3-.
  */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -136,20 +149,23 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /**
  * Add the correct background and color in IE 9-.
  */
 mark {
   background-color: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -160,13 +176,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -174,13 +193,15 @@ sup {
  * Remove the border on images inside links in IE 10-.
  */
 img {
-  border-style: none; }
+  border-style: none;
+}
 
 /**
  * Hide the overflow in IE.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* Grouping content
    ========================================================================== */
@@ -195,13 +216,15 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Add the correct margin in IE 8.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -213,7 +236,8 @@ hr {
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* Forms
    ========================================================================== */
@@ -229,13 +253,15 @@ textarea {
   font: inherit;
   /* 1 */
   margin: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Restore the font weight unset by the previous rule.
  */
 optgroup {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /**
  * Show the overflow in IE.
@@ -244,7 +270,8 @@ optgroup {
 button,
 input {
   /* 1 */
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -253,7 +280,8 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -261,30 +289,33 @@ select {
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
+html [type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
 
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
@@ -292,7 +323,8 @@ button:-moz-focusring,
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -312,55 +344,62 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */ }
+  /* 1 */
+}
 
 /**
  * Remove the default vertical scrollbar in IE.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
 /**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: 0.54; }
+  opacity: 0.54;
+}
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -370,7 +409,8 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */ }
+  /* 2 */
+}
 
 html {
   -webkit-writing-mode: vertical-rl;
@@ -378,34 +418,41 @@ html {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-family: sans-serif;
-  height: 100%; }
+  height: 100%;
+}
 
 body {
   max-height: 100%;
-  line-height: 1.8; }
+  line-height: 1.8;
+}
 
 /* Book title */
 header {
-  text-align: center; }
+  text-align: center;
+}
 
 header .title {
   font-family: "Palatino Linotype", "Source Han Serif TW", "Songti TC", YuMincho, PMingLiu, serif;
   display: inline-block;
   letter-spacing: 0.5em;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 header .author {
   font-family: "Palatino Linotype", "Source Han Serif TW", "Songti TC", YuMincho, PMingLiu, serif;
   font-size: 1.6em;
   display: inline-block;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 header .date {
-  display: none; }
+  display: none;
+}
 
 /* Table of contents */
 #TOC {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Source Han Sans TC", sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, "Source Han Sans TC", sans-serif;
+}
 
 #TOC h2 {
   padding-top: 1.8em;
@@ -413,18 +460,22 @@ header .date {
   display: block;
   font-family: "Palatino Linotype", "Source Han Serif TW", "Songti TC", YuMincho, PMingLiu, serif;
   font-weight: 600;
-  font-size: 1.3em; }
+  font-size: 1.3em;
+}
 
 #TOC ul {
-  line-height: 4; }
+  line-height: 4;
+}
 
 #TOC li {
   list-style-type: none;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 #TOC a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+}
 
 /* Basic styles */
 article {
@@ -435,38 +486,45 @@ article {
   font-family: "Palatino Linotype", "Source Han Serif TW", "Songti TC", YuMincho, PMingLiu, serif;
   line-height: 1.8;
   font-weight: 500;
-  font-feature-settings: 'pkna';
-  text-spacing: ideograph-alpha ideograph-numeric; }
+  font-feature-settings: "pkna";
+  text-spacing: ideograph-alpha ideograph-numeric;
+}
 
 article > h2 {
   font-family: "Palatino Linotype", "Source Han Serif TW", "Songti TC", YuMincho, PMingLiu, serif;
   margin-left: 3em;
   text-align: center;
   counter-reset: footnote;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 a {
   text-decoration: none;
   color: #5F7894;
-  transition: color 0.3s ease; }
+  transition: color 0.3s ease;
+}
 
 a:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 blockquote {
   font-family: "Adobe Garamond Pro", "Biaukai", cursive;
   font-weight: normal;
   font-size: 1em;
-  margin: 0 1em 0 1em; }
+  margin: 0 1em 0 1em;
+}
 
 hr {
   border: none;
   color: #333;
-  line-height: 4; }
+  line-height: 4;
+}
 
 hr:after {
   content: "§";
-  font-size: 1.3em; }
+  font-size: 1.3em;
+}
 
 figure {
   -webkit-writing-mode: horizontal-tb;
@@ -476,23 +534,28 @@ figure {
   flex-direction: column;
   align-items: center;
   font-family: "Helvetica Neue", Helvetica, Arial, "Source Han Sans TC", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 figcaption {
   padding: 0.5em;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+}
 
 figure img {
   max-width: 100% !important;
-  max-height: 100% !important; }
+  max-height: 100% !important;
+}
 
 em {
   font-style: normal;
-  -webkit-text-emphasis-style: dot; }
+  -webkit-text-emphasis-style: dot;
+}
 
 /* 縱中橫 */
 span.zzh {
-  text-combine-upright: all; }
+  text-combine-upright: all;
+}
 
 /* Reference footnotes generated by Pandoc */
 .footnoteRef sup,
@@ -502,26 +565,30 @@ span.zzh {
   vertical-align: text-top;
   font-family: "Helvetica Neue", Helvetica, Arial, "Source Han Sans TC", sans-serif;
   -webkit-writing-mode: horizontal-tb;
-  -epub-writing-mode: horizontal-tb; }
+  -epub-writing-mode: horizontal-tb;
+}
 
 .footnotes:before {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   margin-right: 4em;
   margin-left: 1em;
   width: 1px;
   height: 40%;
-  background: black; }
+  background: black;
+}
 
 .footnotes hr {
-  display: none; }
+  display: none;
+}
 
 .footnotes ol {
   font-family: "Adobe Garamond Pro", "Adobe Fangsong Std", serif;
   list-style-type: none;
   counter-reset: fn;
-  padding-top: 1em; }
+  padding-top: 1em;
+}
 
 .footnotes li:before {
   -webkit-writing-mode: horizontal-tb;
@@ -532,11 +599,13 @@ span.zzh {
   float: left;
   margin-top: -1.8em;
   right: 8px;
-  content: counter(fn); }
+  content: counter(fn);
+}
 
 .footnotes li {
   position: relative;
-  counter-increment: fn; }
+  counter-increment: fn;
+}
 
 @page {
   size: A5;
@@ -545,11 +614,15 @@ span.zzh {
   marks: crop cross;
   bleed: 3mm;
   @footnote {
-    float: bottom; } }
+    float: bottom;
+  }
+}
 @page :first {
   position: relative;
   @bottom-left-corner {
-    content: none; } }
+    content: none;
+  }
+}
 @page :left {
   margin-left: 25mm;
   margin-right: 25mm;
@@ -560,7 +633,9 @@ span.zzh {
     -ms-writing-mode: lr-tb;
     writing-mode: horizontal-tb;
     text-align: center;
-    font-size: 0.8em; } }
+    font-size: 0.8em;
+  }
+}
 @page :right {
   margin-right: 25mm;
   margin-left: 25mm;
@@ -571,14 +646,17 @@ span.zzh {
     -ms-writing-mode: lr-tb;
     writing-mode: horizontal-tb;
     font-size: 0.8em;
-    text-align: center; }
+    text-align: center;
+  }
   @bottom-right {
     margin-bottom: -10mm;
     -webkit-writing-mode: horizontal-tb;
     -ms-writing-mode: lr-tb;
     writing-mode: horizontal-tb;
     font-size: 0.8em;
-    text-align: right; } }
+    text-align: right;
+  }
+}
 @media print {
   /* Book title */
   header {
@@ -587,30 +665,35 @@ span.zzh {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-writing-mode: horizontal-tb; }
+    -webkit-writing-mode: horizontal-tb;
+  }
 
   header .title {
     page-break-after: avoid;
-    letter-spacing: 0; }
+    letter-spacing: 0;
+  }
 
   header .title:after {
-    content: '';
+    content: "";
     display: block;
     position: relative;
     margin-top: 10pt;
     height: 1pt;
     width: 100%;
-    background: #555; }
+    background: #555;
+  }
 
   header .author {
     page-break-before: avoid;
     text-indent: 0;
-    display: block; }
+    display: block;
+  }
 
   /* Table of contents */
   #TOC {
     page-break-before: always;
-    page-break-after: always; }
+    page-break-after: always;
+  }
 
   #TOC a::after {
     content: target-counter(attr(href), page);
@@ -621,34 +704,41 @@ span.zzh {
     font-size: 0.8em;
     align-self: flex-end;
     flex: none;
-    order: 2; }
+    order: 2;
+  }
 
   /* Chapter title */
   article > h2 {
     page-break-before: left;
-    text-indent: 2rem; }
+    text-indent: 2rem;
+  }
 
   h2, h3 {
     -webkit-column-break-after: avoid;
-    page-break-after: avoid; }
+    page-break-after: avoid;
+  }
 
   /* Paragraph styles */
   p {
     orphans: 1;
     widows: 1;
     margin: 0;
-    text-indent: 2em; }
+    text-indent: 2em;
+  }
 
   a {
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+  }
 
   figure {
     margin: 2em -1em;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
   figure img {
-    image-resolution: 300dpi; }
+    image-resolution: 300dpi;
+  }
 
   /* Temporary inline footnote, footnote refs doesn't work with Vivliostyle */
   span.footnote {
@@ -657,42 +747,52 @@ span.zzh {
     counter-increment: footnote;
     margin-top: 1.2em;
     text-indent: -1.6em;
-    footnote-policy: line; }
+    footnote-policy: line;
+  }
 
   span.footnote::footnote-marker,
-  span.footnote::footnote-call {
+span.footnote::footnote-call {
     content: "[" counter(footnote) "]";
     font-size: 0.8em;
     text-indent: 0;
     vertical-align: 10%;
     font-family: "Helvetica Neue";
     -webkit-writing-mode: horizontal-tb;
-    -epub-writing-mode: horizontal-tb; }
+    -epub-writing-mode: horizontal-tb;
+  }
 
   span.footnote::footnote-call {
     margin-top: -0.3em;
-    font-size: 0.6em; }
+    font-size: 0.6em;
+  }
 
   /* Reference footnotes generated by Pandoc */
   .footnoteRef sup,
-  .footnote-ref sup {
-    text-indent: 0; }
+.footnote-ref sup {
+    text-indent: 0;
+  }
 
   .footnotes p {
     text-indent: 0;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
   .footnotes li:before {
-    page-break-after: avoid; }
+    page-break-after: avoid;
+  }
 
   .footnotes a:last-child {
-    display: none; }
+    display: none;
+  }
 
   #bttBtn {
-    display: none; } }
+    display: none;
+  }
+}
 @media screen {
   html {
-    font-size: 18px; }
+    font-size: 18px;
+  }
 
   body {
     margin-right: 1em;
@@ -701,21 +801,26 @@ span.zzh {
     max-height: 36em;
     min-height: 340px;
     padding-top: 1em;
-    padding-bottom: 1em; }
+    padding-bottom: 1em;
+  }
 
   /* Table of contents */
   #TOC {
-    background-color: #ddd; }
+    background-color: #ddd;
+  }
 
   /* Chapter title */
   article > h2 {
-    margin-right: 5em; }
+    margin-right: 5em;
+  }
 
   figure {
     float: left;
     margin: 0 1em 1em 1em;
     border: solid 1px #bbb;
     width: 40%;
-    min-width: 440px; } }
+    min-width: 440px;
+  }
+}
 
 /*# sourceMappingURL=PrintZongpai.css.map */

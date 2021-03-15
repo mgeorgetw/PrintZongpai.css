@@ -5,38 +5,38 @@
 
 /* Normalize everything */
 html {
-    -webkit-writing-mode: vertical-rl;
-    -epub-writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -epub-writing-mode: vertical-rl;
 }
-body { 
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    line-height: 1.75em;
-    text-align: justify;
-    text-align-last:left;
-    -webkit-text-align-last: left;
-    -epub-text-align-last: left;
-    text-justify: inter-ideograph;
-    vertical-align: baseline;
-    background: transparent;
-    word-spacing: normal;
-    letter-spacing: normal;
-    text-indent: 0;
-    white-space: normal;
-    word-wrap: break-word;
-    word-wrap: break-word;
-    line-break: normal;
-    -webkit-line-break: normal;
-    -epub-line-break: normal;
-    word-break: normal;
-    -webkit-word-break: normal;
-    -epub-word-break: normal;
-    -webkit-hyphens: auto;
-    -epub-hyphens: auto;
-    text-underline-position: under left;
-    -webkit-text-underline-position: under left;
-    -epub-text-underline-position: under left;
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.75em;
+  text-align: justify;
+  text-align-last: left;
+  -webkit-text-align-last: left;
+  -epub-text-align-last: left;
+  text-justify: inter-ideograph;
+  vertical-align: baseline;
+  background: transparent;
+  word-spacing: normal;
+  letter-spacing: normal;
+  text-indent: 0;
+  white-space: normal;
+  word-wrap: break-word;
+  word-wrap: break-word;
+  line-break: normal;
+  -webkit-line-break: normal;
+  -epub-line-break: normal;
+  word-break: normal;
+  -webkit-word-break: normal;
+  -epub-word-break: normal;
+  -webkit-hyphens: auto;
+  -epub-hyphens: auto;
+  text-underline-position: under left;
+  -webkit-text-underline-position: under left;
+  -epub-text-underline-position: under left;
 }
 /* Normalize tables */
 table {
@@ -47,7 +47,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-tbody, thead, tfoot, tr, td, th {
+tbody,
+thead,
+tfoot,
+tr,
+td,
+th {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
@@ -57,7 +62,14 @@ tbody, thead, tfoot, tr, td, th {
   border-color: inherit;
   line-height: 1.75em;
 }
-section, header, footer, aside, menu, figure, figcaption, nav {
+section,
+header,
+footer,
+aside,
+menu,
+figure,
+figcaption,
+nav {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
@@ -83,20 +95,29 @@ span {
   vertical-align: baseline;
   background: transparent;
 }
-dl, dt, dd {
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
   background: transparent;
 }
-ol, ul, li {
+ol,
+ul,
+li {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
   background: transparent;
   list-style: none;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   vertical-align: baseline;
   background: transparent;
 }
@@ -136,67 +157,99 @@ a:active {
 }
 
 /* Starts styling */
-code { font-family: monospace; }
-h1 { text-align: center; }
-h2 { text-align: center; }
-h3 { text-align: left; }
-h4 { text-align: left; }
-h5 { text-align: left; }
-h6 { text-align: right; }
-h1.title { text-align: center; }
-h2.author { text-align: center; }
-p.author { text-align: center; text-indent: 0;}
-.date { display: none; }
-ol.toc { padding: 0; margin-top: 1em; }
-ol.toc li { list-style-type: none; margin: 0; padding: 0; }
-nav ol { list-style-type: none; }
+code {
+  font-family: monospace;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: left;
+}
+h4 {
+  text-align: left;
+}
+h5 {
+  text-align: left;
+}
+h6 {
+  text-align: right;
+}
+h1.title {
+  text-align: center;
+}
+h2.author {
+  text-align: center;
+}
+p.author {
+  text-align: center;
+  text-indent: 0;
+}
+.date {
+  display: none;
+}
+ol.toc {
+  padding: 0;
+  margin-top: 1em;
+}
+ol.toc li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ol {
+  list-style-type: none;
+}
 p {
-    text-indent: 2em;
-    margin: 0;
+  text-indent: 2em;
+  margin: 0;
 }
 blockquote {
-    font-family: cursive;
-    margin: 0 1em 0 1em;
+  font-family: cursive;
+  margin: 0 1em 0 1em;
 }
 figure {
-    -webkit-writing-mode: horizontal-tb;
-    -epub-writing-mode: horizontal-tb;
-    text-align: center;
-    width: 100%;
-    margin: auto;
+  -webkit-writing-mode: horizontal-tb;
+  -epub-writing-mode: horizontal-tb;
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
 figcaption {
-    padding:0.8em;
-    font-size: 0.9em;
+  padding: 0.8em;
+  font-size: 0.9em;
 }
 figure img {
-    max-width: 100% !important;
-    max-height: 100% !important;
-    vertical-align: bottom;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  vertical-align: bottom;
 }
 hr {
-    padding: 0;
-    border: none;
-    height: 50%;
-    text-align: center;
+  padding: 0;
+  border: none;
+  height: 50%;
+  text-align: center;
 }
 hr:after {
-    content: "§";
-    display: inline-block;
-    position: relative;
-    font-size: 1.3em;
-    padding: 0 0.25em;
+  content: "§";
+  display: inline-block;
+  position: relative;
+  font-size: 1.3em;
+  padding: 0 0.25em;
 }
 em {
-    font-style: normal;
-    -webkit-text-emphasis-style: dot;
+  font-style: normal;
+  -webkit-text-emphasis-style: dot;
 }
 
 /* 文字強調 */
 .b {
   font-weight: bold;
 }
-.i{
+.i {
   font-style: italic;
 }
 .s {
@@ -232,7 +285,7 @@ em {
 
 /* 對齊 */
 .float-none {
-    float: none;
+  float: none;
 }
 .float-left {
   float: left;
@@ -248,67 +301,99 @@ em {
 }
 
 .footnotes hr {
-    margin-right: 1.25em;
-    margin-left: 1.25em;
+  margin-right: 1.25em;
+  margin-left: 1.25em;
 }
 .footnotes ol {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 .footnotes li {
-    font-size: 0.875em;
+  font-size: 0.875em;
 }
 .footnotes p {
-    text-indent: 0;
+  text-indent: 0;
 }
 a.footnoteRef,
 a.footnote-ref {
-    display: inline-block;
-    border: none;
-    font-size: 0.75em;
-    line-height: 1;
-    vertical-align: super;
-    -webkit-writing-mode: horizontal-tb;
-    -epub-writing-mode: horizontal-tb;
-    text-indent: 0;
+  display: inline-block;
+  border: none;
+  font-size: 0.75em;
+  line-height: 1;
+  vertical-align: super;
+  -webkit-writing-mode: horizontal-tb;
+  -epub-writing-mode: horizontal-tb;
+  text-indent: 0;
+}
+
+/* 表格 */
+table,
+th,
+td {
+  border: 1px solid black;
 }
 
 /*  Disable hyphenation for headings to avoid single-syllable-lines.
  */
 h1,
 h2 {
-    -epub-hyphens: none;
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    hyphens: none;
+  -epub-hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
 }
 
 /* Set the minimum amount of lines to show up on a separate page. (There is not much support for this at the moment.)
  */
 p,
 blockquote {
-    orphans: 2;
-    widows: 2;
+  orphans: 2;
+  widows: 2;
 }
 
 /*  Turn on hyphenation for paragraphs and captions only.
  */
 p,
 figcaption {
-    -epub-hyphens: auto;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
+  -epub-hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 /*  Shortcodes for page-break rules.
 Use data attributes to designate if and how the page should be broken before, inside or after an element.
  */
-h1, h2, h3, h4, h5, h6,
-table, img, figure, video,
-[data-page-break~=inside][data-page-break~=avoid] { page-break-inside:  avoid; }
-[data-page-break~=after]                          { page-break-after:  always; }
-h1, h2, h3, h4, h5, h6,
-[data-page-break~=after][data-page-break~=avoid]  { page-break-after:   avoid; }
-[data-page-break~=before]                         { page-break-before: always; }
-[data-page-break~=before][data-page-break~=avoid] { page-break-before:  avoid; }
-img[data-page-break~=before]                      { page-break-before:   left; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+img,
+figure,
+video,
+[data-page-break~="inside"][data-page-break~="avoid"] {
+  page-break-inside: avoid;
+}
+[data-page-break~="after"] {
+  page-break-after: always;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+[data-page-break~="after"][data-page-break~="avoid"] {
+  page-break-after: avoid;
+}
+[data-page-break~="before"] {
+  page-break-before: always;
+}
+[data-page-break~="before"][data-page-break~="avoid"] {
+  page-break-before: avoid;
+}
+img[data-page-break~="before"] {
+  page-break-before: left;
+}
